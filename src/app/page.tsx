@@ -50,6 +50,7 @@ export default function Home() {
             <Link href="/biotecnologia">Biotecnología</Link>
             <Link href="/consultoria">Consultoría</Link>
             <Link href="/renovables">Renovables</Link>
+            <Link href="/blog">Blog</Link>
           </nav>
           <Link href="#contacto" className="btn-primary">
             Contáctanos
