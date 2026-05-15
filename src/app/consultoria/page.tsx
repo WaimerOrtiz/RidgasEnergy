@@ -42,21 +42,21 @@ export default function Consultoria() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* NAVBAR */}
-      <header>
-        <div className="container nav-container">
-          <Link href="/" className="logo-container">
+      <header className="bg-[#0B1F3A] sticky top-0 z-50 border-b border-white/10">
+        <div className="container nav-container" style={{ height: '80px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Link href="/" className="logo-container" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '800', color: 'white' }}>
             <Image src="/images/Logo.png" alt="Ridgas Energy Logo" width={40} height={40} />
-            RIDGAS ENERGY
+            <span>RIDGAS ENERGY</span>
           </Link>
-          <nav className="nav-links lg:flex hidden">
-            <Link href="/">Inicio</Link>
-            <Link href="/biotecnologia">Biotecnología</Link>
-            <Link href="/consultoria" className="!text-[#0B1F3A] !font-bold border-b-2 border-[#F5B400] pb-1">Consultoría</Link>
-            <Link href="/renovables">Renovables</Link>
+          <nav className="nav-links lg:flex hidden" style={{ display: 'flex', gap: '25px' }}>
+            <Link href="/" className="text-white/70 hover:text-white text-sm font-medium">Inicio</Link>
+            <Link href="/biotecnologia" className="text-white/70 hover:text-white text-sm font-medium">Biotecnología</Link>
+            <Link href="/consultoria" className="text-[#F5B400] font-bold border-b-2 border-[#F5B400] pb-1 text-sm">Consultoría</Link>
+            <Link href="/renovables" className="text-white/70 hover:text-white text-sm font-medium">Renovables</Link>
+            <Link href="/blog" className="text-white/70 hover:text-white text-sm font-medium">Blog</Link>
           </nav>
-          <Link href="#contacto" className="btn-primary">
-            Contáctanos
+          <Link href="#contacto" className="btn-primary" style={{ background: '#F5B400', color: '#0B1F3A', padding: '10px 24px', borderRadius: '4px', fontWeight: '700', fontSize: '0.8rem', textTransform: 'uppercase' }}>
+             Contáctanos
           </Link>
         </div>
       </header>
