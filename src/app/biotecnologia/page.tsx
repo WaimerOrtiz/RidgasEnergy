@@ -85,10 +85,10 @@ export default function Biotecnologia() {
               <div className="pill">
                 <span>•</span> TECNOLOGÍA MICRO-BAC <span>•</span> MEOR
               </div>
-              <h1 className="text-white">Biotecnología Aplicada para la Industria del Petróleo</h1>
-              <p className="subtitle">Optimizamos la producción y mejoramos el factor de recobro mediante soluciones biológicas de alto impacto operacional.</p>
+              <h1 className="text-white">Soluciones microbiológicas para recobro mejorado (EOR)</h1>
+              <p className="subtitle">Tecnología microbiológica de Micro-bac International aplicada al incremento de producción y mejora del factor de recobro.</p>
               <p>
-                Representantes en Colombia de <strong>Micro-bac International</strong>, pioneros con más de 40 años de éxito internacional en la aplicación de microorganismos para el sector Oil & Gas.
+                RIDGAS ENERGY es el aliado estratégico en Colombia para la implementación de soluciones microbiológicas de Micro-bac International, diseñadas para maximizar el factor de recobro y la eficiencia operativa.
               </p>
               <div className="hero-actions">
                 <Link href="#soluciones" className="btn-yellow">

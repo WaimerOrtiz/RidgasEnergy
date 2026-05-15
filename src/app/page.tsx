@@ -46,11 +46,13 @@ export default function Home() {
             RIDGAS ENERGY
           </Link>
           <nav className="nav-links lg:flex hidden">
-            <Link href="/" className="!text-[#0B1F3A] !font-bold border-b-2 border-[#F5B400] pb-1">Inicio</Link>
+            <Link href="#desafios">Desafíos</Link>
             <Link href="/biotecnologia">Biotecnología</Link>
             <Link href="/consultoria">Consultoría</Link>
+            <Link href="#experiencia">Experiencia</Link>
             <Link href="/renovables">Renovables</Link>
             <Link href="/blog">Blog</Link>
+            <Link href="#contacto">Contacto</Link>
           </nav>
           <Link href="#contacto" className="btn-primary">
             Contáctanos
@@ -184,9 +186,9 @@ export default function Home() {
           <div className="container">
             <div className="exp-grid">
               <div>
-                <h4 className="section-label">TRAYECTORIA</h4>
-                <h2 className="section-title">Excelencia Operacional Garantizada</h2>
-                <p className="section-desc">Más de 25 años aplicando conocimiento técnico directo en la industria petrolera colombiana e internacional.</p>
+                <h4 className="section-label">EXPERIENCIA</h4>
+                <h2 className="section-title">Más de 25 años de experiencia en campo</h2>
+                <p className="section-desc">La base técnica de RIDGAS ENERGY proviene de más de 25 años de experiencia en la industria petrolera.</p>
                 <ul className="exp-list">
                   <li>Tratamiento químico aplicado a producción</li>
                   <li>Optimización de procesos</li>
@@ -213,9 +215,9 @@ export default function Home() {
           <div className="container">
             <div className="contact-grid">
               <div>
-                <h4 className="section-label">HABLEMOS</h4>
-                <h2 className="section-title">¿Listo para optimizar su campo?</h2>
-                <p className="section-desc">Cuéntenos sobre su reto operacional y un especialista técnico le contactará en menos de 24 horas.</p>
+                <h4 className="section-label">CONTACTO</h4>
+                <h2 className="section-title">Hablemos de su operación</h2>
+                <p className="section-desc">Cuéntenos sobre su campo, el reto y el resultado que necesita. Le responderemos en menos de un día hábil.</p>
                 
                 <div className="contact-info">
                   {[
@@ -237,7 +239,7 @@ export default function Home() {
                 <form action={submitContact}>
                   <div className="form-row">
                     <div className="form-group">
-                      <label htmlFor="nombre">NOMBRE</label>
+                      <label htmlFor="nombre">NOMBRE COMPLETO</label>
                       <input type="text" id="nombre" name="nombre" required />
                     </div>
                     <div className="form-group">
@@ -245,16 +247,22 @@ export default function Home() {
                       <input type="text" id="empresa" name="empresa" />
                     </div>
                   </div>
-                  <div className="form-group">
-                    <label htmlFor="correo">CORREO PROFESIONAL</label>
-                    <input type="email" id="correo" name="correo" required />
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label htmlFor="correo">CORREO</label>
+                      <input type="email" id="correo" name="correo" required />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="telefono">TELÉFONO</label>
+                      <input type="tel" id="telefono" name="telefono" />
+                    </div>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="mensaje">RETO O PROYECTO</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Describa brevemente su requerimiento..." required></textarea>
+                    <label htmlFor="mensaje">MENSAJE</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Describa brevemente su proyecto o reto..." required></textarea>
                   </div>
-                  <button type="submit" className="btn-primary w-full">
-                    Enviar Consulta
+                  <button type="submit" className="btn-primary w-full flex items-center justify-center gap-2">
+                    Contactar <Send size={18} />
                   </button>
                 </form>
               </div>

@@ -88,10 +88,10 @@ export default function Consultoria() {
               <div className="pill">
                 <span>•</span> ESTRATEGIA EN TRANSICIÓN ENERGÉTICA <span>•</span> +25 AÑOS
               </div>
-              <h1 className="text-white">Consultoría Especializada en Optimización de Facilidades de Superficie</h1>
-              <p className="subtitle">Diagnóstico experto basado en décadas de trayectoria en campo, ahora potenciado con analítica predictiva para resolver problemas críticos en sistemas de producción y tratamiento de crudo, agua y gas.</p>
+              <h1 className="text-white">Diagnóstico técnico de problemas de producción en campo</h1>
+              <p className="subtitle">RIDGAS ENERGY se apoya en experiencia directa en campo para identificar y resolver problemas reales de producción.</p>
               <p>
-                Identificamos las causas raíz de la baja producción mediante ingeniería de detalle y modelos de datos, abordando fenómenos de corrosión y emulsiones complejas desde el fondo de pozo hasta la superficie.
+                Identificamos las causas raíz de la baja producción mediante ingeniería de detalle, abordando fenómenos de corrosión y emulsiones complejas desde el fondo de pozo hasta la superficie.
               </p>
               <div className="hero-actions">
                 <Link href="#perfil" className="btn-yellow">

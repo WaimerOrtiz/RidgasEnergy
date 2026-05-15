@@ -81,10 +81,10 @@ export default function Renovables() {
           
           <div className="container" style={{ position: 'relative', zIndex: 10, padding: '120px 20px' }}>
             <div className="hero-content">
-              <h1 className="text-white">Soluciones Fotovoltaicas e Inteligencia Energética Aplicada</h1>
-              <p className="subtitle">Lideramos la evolución energética mediante la estructuración de proyectos solares potenciados con analítica de datos y gestión inteligente de activos.</p>
+              <h1 className="text-white">Energía solar y soluciones energéticas</h1>
+              <p className="subtitle">RIDGAS ENERGY desarrolla soluciones en energía solar como parte de una visión integral del sector energético.</p>
               <p>
-                Desde la habilitación estratégica de tierras hasta la implementación de modelos de autogeneración a gran escala, integramos innovación tecnológica para maximizar el rendimiento energético.
+                RIDGAS ENERGY desarrolla soluciones en energía solar como parte de una visión integral del sector energético.
               </p>
               <div className="hero-actions">
                 <Link href="#servicios" className="btn-yellow">
