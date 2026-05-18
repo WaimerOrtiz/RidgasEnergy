@@ -3,15 +3,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { 
-  ArrowRight, 
-  TrendingDown, 
-  CircleDot, 
-  Zap, 
-  Recycle, 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  ArrowRight,
+  TrendingDown,
+  CircleDot,
+  Zap,
+  Recycle,
+  Mail,
+  Phone,
+  MapPin,
   Send,
   ExternalLink,
   Sun,
@@ -46,14 +46,13 @@ export default function Home() {
             RIDGAS ENERGY
           </Link>
           <nav className="nav-links lg:flex hidden">
-            <Link href="#desafios">Desafíos</Link>
+            <Link href="/">Inicio</Link>
             <Link href="/biotecnologia">Biotecnología</Link>
             <Link href="/consultoria">Consultoría</Link>
-            <Link href="#experiencia">Experiencia</Link>
             <Link href="/renovables">Renovables</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="#contacto">Contacto</Link>
           </nav>
+
           <Link href="#contacto" className="btn-primary">
             Contáctanos
           </Link>
@@ -64,7 +63,7 @@ export default function Home() {
         {/* HERO - Estructura Original con Carrusel */}
         <section className="hero" style={{ padding: 0, overflow: 'hidden' }}>
           {HERO_IMAGES.map((img, index) => (
-            <div 
+            <div
               key={index}
               style={{
                 position: 'absolute',
@@ -81,7 +80,7 @@ export default function Home() {
               }}
             />
           ))}
-          
+
           <div className="container" style={{ position: 'relative', zIndex: 10, padding: '120px 20px' }}>
             <div className="hero-content">
               <div className="pill">
@@ -110,7 +109,7 @@ export default function Home() {
             <h4 className="section-label">DESAFÍOS DEL SECTOR</h4>
             <h2 className="section-title">Maximizando el potencial de sus activos</h2>
             <p className="section-desc">Identificamos y resolvemos los cuellos de botella que limitan su producción diaria.</p>
-            
+
             <div className="problems-grid">
               {[
                 { icon: TrendingDown, text: "Baja producción en pozos", color: "yellow" },
@@ -134,7 +133,7 @@ export default function Home() {
           <div className="container">
             <h4 className="section-label">NUESTROS PILARES</h4>
             <h2 className="section-title">Soluciones Integrales de Ingeniería</h2>
-            
+
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginTop: '50px' }}>
               {/* Servicio 1: Biotecnología */}
               <div className="bio-card-white" style={{ display: 'flex', flexDirection: 'column' }}>
@@ -197,14 +196,20 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <h4 className="section-label mb-6">EXPERIENCIA ADQUIRIDA EN</h4>
+                <h4 className="section-label mb-6">TRAYECTORIA</h4>
+                <h2 className="section-title !text-white mb-8">Trayectoria y Respaldo en<br />Operadoras del Sector</h2>
                 <div className="companies-grid">
-                  {["Champion Technologies", "ATP Ingeniería", "SIPECOL", "RIDGAS LTDA", "Micro-bac"].map((company, i) => (
+                  {[
+                    "Ecopetrol", "Hocol", "Chevron", "OXY", "BP",
+                    "Frontera Energy", "Parex Resources", "Gran Tierra Energy",
+                    "Mansarovar Energy", "Champion Technologies", "ATP Ingeniería", "Sipecol"
+                  ].map((company, i) => (
                     <div key={i} className="company-card">
                       {company}
                     </div>
                   ))}
                 </div>
+
               </div>
             </div>
           </div>
@@ -218,7 +223,7 @@ export default function Home() {
                 <h4 className="section-label">CONTACTO</h4>
                 <h2 className="section-title">Hablemos de su operación</h2>
                 <p className="section-desc">Cuéntenos sobre su campo, el reto y el resultado que necesita. Le responderemos en menos de un día hábil.</p>
-                
+
                 <div className="contact-info">
                   {[
                     { icon: Mail, label: "CORREO", value: "waimer.ortiz@ridgasenergy.com" },
@@ -234,7 +239,7 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="contact-form">
                 <form action={submitContact}>
                   <div className="form-row">

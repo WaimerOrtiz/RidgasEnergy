@@ -3,12 +3,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { 
-  ArrowRight, 
-  Sun, 
-  Users, 
-  MapPin, 
-  Factory, 
+import {
+  ArrowRight,
+  Sun,
+  Users,
+  MapPin,
+  Factory,
   Zap,
   CheckCircle2,
   ExternalLink,
@@ -38,7 +38,7 @@ export default function Renovables() {
 
   return (
     <div className="min-h-screen bg-white">
-      <header className="bg-[#0B1F3A] sticky top-0 z-50 border-b border-white/10">
+      <header className="bg-[#0B1F3A] z-50 border-b border-white/10">
         <div className="container nav-container" style={{ height: '80px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/" className="logo-container" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '800', color: 'white' }}>
             <Image src="/images/Logo.png" alt="Ridgas Energy Logo" width={40} height={40} />
@@ -61,7 +61,7 @@ export default function Renovables() {
         {/* HERO CON CARRUSEL */}
         <section className="hero" style={{ padding: 0, overflow: 'hidden' }}>
           {HERO_IMAGES.map((img, index) => (
-            <div 
+            <div
               key={index}
               style={{
                 position: 'absolute',
@@ -78,7 +78,7 @@ export default function Renovables() {
               }}
             />
           ))}
-          
+
           <div className="container" style={{ position: 'relative', zIndex: 10, padding: '120px 20px' }}>
             <div className="hero-content">
               <h1 className="text-white">Energía solar y soluciones energéticas</h1>
@@ -201,7 +201,7 @@ export default function Renovables() {
                 <h4 className="section-label">INICIE SU TRANSICIÓN</h4>
                 <h2 className="section-title">¿Tiene un proyecto solar en mente?</h2>
                 <p className="section-desc">Desde un estudio de factibilidad hasta la puesta en marcha, somos su aliado técnico.</p>
-                
+
                 <div className="contact-info">
                   {[
                     { icon: Mail, label: "CORREO", value: "waimer.ortiz@ridgasenergy.com" },
@@ -217,7 +217,7 @@ export default function Renovables() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="contact-form">
                 <form action={submitContact}>
                   <div className="form-row">

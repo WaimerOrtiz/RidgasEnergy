@@ -3,14 +3,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { 
-  ArrowRight, 
-  CheckCircle2, 
-  Droplets, 
-  ShieldCheck, 
-  Zap, 
-  FlaskConical, 
-  Waves, 
+import {
+  ArrowRight,
+  CheckCircle2,
+  Droplets,
+  ShieldCheck,
+  Zap,
+  FlaskConical,
+  Waves,
   Leaf,
   ExternalLink,
   Mail,
@@ -39,7 +39,7 @@ export default function Biotecnologia() {
 
   return (
     <div className="min-h-screen bg-white">
-      <header className="bg-[#0B1F3A] sticky top-0 z-50 border-b border-white/10">
+      <header className="bg-[#0B1F3A] z-50 border-b border-white/10">
         <div className="container nav-container" style={{ height: '80px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/" className="logo-container" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '800', color: 'white' }}>
             <Image src="/images/Logo.png" alt="Ridgas Energy Logo" width={40} height={40} />
@@ -62,7 +62,7 @@ export default function Biotecnologia() {
         {/* HERO ESPECÍFICO CON CARRUSEL */}
         <section className="hero" style={{ padding: 0, overflow: 'hidden' }}>
           {HERO_IMAGES.map((img, index) => (
-            <div 
+            <div
               key={index}
               style={{
                 position: 'absolute',
@@ -79,7 +79,7 @@ export default function Biotecnologia() {
               }}
             />
           ))}
-          
+
           <div className="container" style={{ position: 'relative', zIndex: 10, padding: '120px 20px' }}>
             <div className="hero-content">
               <div className="pill">
@@ -149,7 +149,7 @@ export default function Biotecnologia() {
             <h4 className="section-label">LÍNEAS DE PRODUCTO</h4>
             <h2 className="section-title">Soluciones Especializadas de Micro-bac®</h2>
             <p className="section-desc">Contamos con una gama completa de productos diseñados para cada reto en el campo.</p>
-            
+
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '30px' }}>
               {/* Línea Para-Bac */}
               <div className="bio-card-white">
@@ -234,7 +234,7 @@ export default function Biotecnologia() {
                 <h4 className="section-label">CONSULTE A UN EXPERTO</h4>
                 <h2 className="section-title">¿Tiene un reto de producción?</h2>
                 <p className="section-desc">Solicite una evaluación preliminar para determinar la viabilidad de la tecnología MEOR en su activo.</p>
-                
+
                 <div className="contact-info">
                   {[
                     { icon: Mail, label: "CORREO", value: "waimer.ortiz@ridgasenergy.com" },
@@ -250,7 +250,7 @@ export default function Biotecnologia() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="contact-form">
                 <form action={submitContact}>
                   <div className="form-row">

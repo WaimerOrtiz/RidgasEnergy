@@ -3,14 +3,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { 
-  ArrowRight, 
-  ClipboardCheck, 
-  FlaskConical, 
-  Search, 
-  Microscope, 
-  Factory, 
-  Settings, 
+import {
+  ArrowRight,
+  ClipboardCheck,
+  FlaskConical,
+  Search,
+  Microscope,
+  Factory,
+  Settings,
   Droplets,
   ExternalLink,
   Mail,
@@ -42,7 +42,7 @@ export default function Consultoria() {
 
   return (
     <div className="min-h-screen bg-white">
-      <header className="bg-[#0B1F3A] sticky top-0 z-50 border-b border-white/10">
+      <header className="bg-[#0B1F3A] z-50 border-b border-white/10">
         <div className="container nav-container" style={{ height: '80px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/" className="logo-container" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '800', color: 'white' }}>
             <Image src="/images/Logo.png" alt="Ridgas Energy Logo" width={40} height={40} />
@@ -56,7 +56,7 @@ export default function Consultoria() {
             <Link href="/blog" className="text-white/70 hover:text-white text-sm font-medium">Blog</Link>
           </nav>
           <Link href="#contacto" className="btn-primary" style={{ background: '#F5B400', color: '#0B1F3A', padding: '10px 24px', borderRadius: '4px', fontWeight: '700', fontSize: '0.8rem', textTransform: 'uppercase' }}>
-             Contáctanos
+            Contáctanos
           </Link>
         </div>
       </header>
@@ -65,7 +65,7 @@ export default function Consultoria() {
         {/* HERO CON ENFOQUE EN ESTRATEGIA */}
         <section className="hero" style={{ padding: 0, overflow: 'hidden' }}>
           {HERO_IMAGES.map((img, index) => (
-            <div 
+            <div
               key={index}
               style={{
                 position: 'absolute',
@@ -82,7 +82,7 @@ export default function Consultoria() {
               }}
             />
           ))}
-          
+
           <div className="container" style={{ position: 'relative', zIndex: 10, padding: '120px 20px' }}>
             <div className="hero-content">
               <div className="pill">
@@ -131,11 +131,11 @@ export default function Consultoria() {
               <div className="bio-card-white" style={{ borderLeft: '4px solid #F5B400', padding: '40px' }}>
                 <h3 className="bio-card-title">Capacidades Estratégicas</h3>
                 <ul className="exp-list" style={{ marginTop: '20px' }}>
-                <li style={{ fontSize: '0.9rem' }}>Gerenciamiento de Tratamientos Químicos (Crudo, Gas, Agua).</li>
-                <li style={{ fontSize: '0.9rem' }}>Aseguramiento de Integridad de Facilidades.</li>
-                <li style={{ fontSize: '0.9rem' }}>Auditoría de Inyectividad y Diagnóstico de Daño de Formación.</li>
-                <li style={{ fontSize: '0.9rem' }}>Desarrollo de software aplicado a la industria.</li>
-                <li style={{ fontSize: '0.9rem' }}>Optimización Operativa de Sistemas de Levantamiento Artificial.</li>
+                  <li style={{ fontSize: '0.9rem' }}>Gerenciamiento de Tratamientos Químicos (Crudo, Gas, Agua).</li>
+                  <li style={{ fontSize: '0.9rem' }}>Aseguramiento de Integridad de Facilidades.</li>
+                  <li style={{ fontSize: '0.9rem' }}>Auditoría de Inyectividad y Diagnóstico de Daño de Formación.</li>
+                  <li style={{ fontSize: '0.9rem' }}>Desarrollo de software aplicado a la industria.</li>
+                  <li style={{ fontSize: '0.9rem' }}>Optimización Operativa de Sistemas de Levantamiento Artificial.</li>
                 </ul>
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function Consultoria() {
                 <h4 className="section-label">INICIE LA CONVERSACIÓN</h4>
                 <h2 className="section-title">¿Cómo podemos potenciar su activo?</h2>
                 <p className="section-desc">Estructuremos juntos una solución que combine rigor técnico con visión de futuro.</p>
-                
+
                 <div className="contact-info">
                   {[
                     { icon: Mail, label: "CORREO", value: "waimer.ortiz@ridgasenergy.com" },
@@ -212,7 +212,7 @@ export default function Consultoria() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="contact-form">
                 <form action={submitContact}>
                   <div className="form-row">
@@ -244,7 +244,7 @@ export default function Consultoria() {
       </main>
 
       {/* FOOTER */}
-    <footer>
+      <footer>
         <div className="container">
           <div className="footer-grid">
             <div className="footer-col">
